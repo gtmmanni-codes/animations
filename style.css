@@ -40,7 +40,33 @@
     animation-play-state: running;
     animation-iteration-count: infinite;
 }
-@keyframes rotate {
-    0%{transform: rotateZ(0deg);}
-    100%{transform: rotateZ(90deg)}
+/*@keyframes rotate {
+    0%{transform: rotatex(0deg);}
+    100%{transform: rotatex(90deg)}
+}**/
+
+#box1{
+    
+    border: 2px solid blue;
+    border-radius: 2%;
+    height: 100px;
+    width: 100px;
+
+    background-color: cornflowerblue;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
 }
+#box2{
+    transform: skewX(90deg);
+    border: 2px solid blue;
+    border-radius: 2%;
+    height: 100px;
+    width: 100px;
+
+    background-color: cornflowerblue;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;}
