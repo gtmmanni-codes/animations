@@ -1,0 +1,46 @@
+#circle{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+    background-color: black;
+    animation-name:colors;
+    animation-duration:5s;
+    animation-play-state:initial;
+    animation-iteration-count: infinite;
+
+    
+}
+@keyframes colors{
+    0%{
+        background-color: red;
+        border-color:green ;
+    }
+    50%{
+        background-color:springgreen;
+        border-color: red;
+    }
+    100%{
+        background-color: green;
+        border-color: springgreen;
+    }
+
+}
+#square{
+    margin: 10%;
+    border: 2px solid blue;
+    border-radius: 2%;
+    height: 100px;
+    width: 100px;
+
+    background-color: cornflowerblue;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(90deg)}
+}
